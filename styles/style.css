@@ -112,63 +112,111 @@ nav>ul {
 .feature-text {
     color: #727272;
 }
+
 /* Love section style  */
 .vertical {
     border-left: 6px solid #FF900E;
     width: 5px;
-height: 106px;
+    height: 106px;
 }
-.section-header{
+
+.section-header {
     display: flex;
     margin-bottom: 20px;
 }
-.skill-container{
+
+.skill-container {
     display: flex;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 220px;
 }
-.skill-description{
+
+.skill-description {
     font-weight: 400;
     color: #727272;
     margin-bottom: 25px;
 }
-.skill{
-   box-shadow: 10px 10px 5px 5px whitesmoke;
+
+.skill {
+    box-shadow: 10px 10px 5px 5px whitesmoke;
 }
-.love-header{
+
+.love-header {
     font-size: 2.8rem;
     width: 80%;
 }
-.skill-names{
+
+.skill-names {
     width: 50%;
 }
-.skill-img > img{
+
+.skill-img>img {
     width: 80%;
     margin-left: 100px;
-    
+
 }
-.skill-title{
+
+.skill-title {
     color: #131313;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
-.skill-text{
+
+.skill-text {
     color: #727272;
     margin-bottom: 50px;
 }
-#yr-btn{
+
+#yr-btn {
     font-size: 4rem;
 }
-#yr-last{
+
+#yr-last {
     font-size: 1.5rem;
 }
- #year-button{
+
+#year-button {
     position: relative;
     bottom: 100px;
-} 
+}
 
+/* Fact Section Style  */
+.fact-header {
+    font-size: 2.8rem;
+    margin-left: 230px;
+    margin-bottom: 25px;
+}
+
+.fact-description {
+    font-weight: 400;
+    color: #727272;
+    width: 80%;
+    max-width: 600px;
+    margin-left: 230px;
+    margin-bottom: 120px;
+}
+
+.fact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.fact-item{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+   padding: 45px;
+   text-align: center;
+}
+:hover.fact-item{
+transform: rotate(45deg) ;
+background-color: #FF900E;
+
+}
 /* Responsive */
 @media only screen and (max-width: 600px) {
     .feature-container {
@@ -200,14 +248,23 @@ height: 106px;
         gap: 20px;
         padding: 15px
     }
-    .skill-container{
+
+    .skill-container {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
         margin-top: 20px;
     }
-    .skill-img > img{
+
+    .skill-img>img {
         width: 80%;
-       margin: 12px;
+        margin: 12px;
+    }
+    .fact-header,.fact-description{
+        margin-left: 30px;
+    }
+    .fact-container{
+        flex-direction: column;
+        gap: 5px;
     }
 }
