@@ -206,42 +206,85 @@ nav>ul {
     max-width: 900px;
     margin: 0 auto;
 }
-.fact-item{
+
+.fact-item {
     border: 1px solid #FF900E;
     border-radius: 8px;
-   padding: 45px;
-   text-align: center;
+    padding: 45px;
+    text-align: center;
 }
-:hover.fact-item{
-transform: rotate(45deg) ;
-background-color: #FF900E;
+
+:hover.fact-item {
+    transform: rotate(45deg);
+    background-color: #FF900E;
 }
-/* Sponsore Section style  */
-.sponsore{
+
+/* Sponsore Section style  /last section style */
+.sponsore,
+.last-section {
     width: 100%;
     max-width: 600px;
     margin: 40px auto;
     text-align: center;
 }
-.sponsore-header{
+
+.sponsore-header,
+.last-header {
     font-size: 2.8rem;
     margin-bottom: 20px;
 }
-.sponsore-description{
+
+.sponsore-description,
+.last-text {
     font-weight: 400;
     color: #727272;
     margin-bottom: 40px;
 }
-.sponsore-container{
+
+.sponsore-container {
     display: flex;
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+    margin-bottom: 80px;
     justify-content: space-between;
+
 }
-.sponsore-img{
+
+.sponsore-img {
     filter: grayscale(1);
 }
+
+.last-header {
+    color: #FF900E;
+}
+
+.last-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 25px;
+    margin-bottom: 100px;
+}
+
+/* Footer style  */
+.footer-container {
+    width: 100%;
+    max-width: 1100px;
+    align-items: center;
+    background: #FFF4E7;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 60px;
+    border: 1px solid none;
+    border-radius: 8px;
+
+}
+
 /* Responsive */
 @media only screen and (max-width: 600px) {
     .feature-container {
@@ -285,16 +328,29 @@ background-color: #FF900E;
         width: 80%;
         margin: 12px;
     }
-    .fact-header,.fact-description{
+
+    .fact-header,
+    .fact-description {
         margin-left: 30px;
     }
-    .fact-container{
+
+    .fact-container {
         flex-direction: column;
         gap: 5px;
     }
-    .sponsore-container{
+
+    .sponsore-container {
         flex-direction: column;
         align-items: center;
         gap: 15px;
+    }
+
+    .footer-container {
+        margin-bottom: 40px;
+        padding: 30px;
+    }
+
+    .last-container {
+        margin-bottom: 5px;
     }
 }
